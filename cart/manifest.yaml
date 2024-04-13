@@ -23,11 +23,10 @@ spec:
     spec:
       containers:
       - name: cart
-        image: visu90522/cart:1.0.0
+        image: visu89522/cart:1.0.0
         envFrom:
         - configMapRef:
             name: cart
-
 ---
 apiVersion: v1
 kind: Service
@@ -40,7 +39,7 @@ spec:
     tier: app
     project: roboshop
   ports:
-  - name: cart-port
+  - name: mongodb-port
     protocol: TCP
     port: 8080 # this port belongs to service
     targetPort: 8080 # this port belongs to container
