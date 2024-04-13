@@ -23,6 +23,9 @@ spec:
       containers:
       - name: catalogue
         image: visu90522/catalogue:1.0.0
+        envFrom:
+        - configMapRef:
+            name: catalogue
 
 ---
 apiVersion: v1
