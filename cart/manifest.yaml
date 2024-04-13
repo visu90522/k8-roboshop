@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: cart
-        image: visu89522/cart:1.0.0
+        image: visu90522/cart:1.0.0
         envFrom:
         - configMapRef:
             name: cart
